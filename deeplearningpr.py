@@ -223,9 +223,9 @@ model.add(layers.MaxPooling2D((2, 2)))                                          
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))                          #3*3짜리 conv층 64개 사용 
 model.add(layers.MaxPooling2D((2, 2)))                                           #2*2 maxpooling
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))                         #3*3짜리 conv층 62개 사용
-model.add(layers.BatchNormalization())
+model.add(layers.BatchNormalization())                                           #batchnormalization 기법 사용
 model.add(layers.Flatten())                                                      #flatten 시키기
-model.add(layers.Dropout(0.3))
+model.add(layers.Dropout(0.3))                                                   #dropout 사용
 model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(10, activation='softmax'))
 
