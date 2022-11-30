@@ -1,12 +1,6 @@
 # Keras를 이용하여 딥러닝 모델 만들고 훈련하기
 
-파이썬 딥러닝 라이브러리인 Keras를 이용하여 실전 문제에서 신경망을 어떻게 사용하는지 세 가지 예제를 살펴 본다.
-* AND, XOR (이진 분류)  
-* MNIST 데이터 이미지 분류 (다중 분류)
-
-
 ## And gate: 이진 분류
-
 
 from keras.models import Sequential # keras.models의 Sequential을 설치
 from keras.layers import Dense      #keras,layer의 Dense를 설치
